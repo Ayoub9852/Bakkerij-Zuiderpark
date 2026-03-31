@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bakery-bg: #FAF6F0;
+  --color-bakery-text: #2C1810;
+  --color-bakery-gold: #C8A45E;
+  --color-bakery-terracotta: #C17C4E;
+  --color-bakery-muted: #7A6B5D;
+
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--color-bakery-bg);
+  color: var(--color-bakery-text);
+  font-family: var(--font-sans);
+  /* Subtle grain effect */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
